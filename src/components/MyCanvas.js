@@ -100,7 +100,7 @@ console.log(points)
 
   function rus() {
     const ctx = ctxRef.current;
-    if (!ctx) return; // Check if ctx is null
+    if (!ctx || !canvasRef.current) return; // Check if ctx is null
 
     ctx.globalCompositeOperation = "source-over";
     ctx.fillStyle = "rgba(0,0,0,0.03)";

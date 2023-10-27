@@ -13,7 +13,7 @@ const Card = ({ title, description, imageSrc }) => {
         <p className="card-description">{description}</p>
         <div className='card-actions'>
         <DeleteOutline className="card-delete" />
-        <a className="card-link" href="#"> => </a>
+        <a className="card-link" href="#"> = </a>
         </div>
       </div>
     </div>

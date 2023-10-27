@@ -1,15 +1,24 @@
-import React, { useState, useEffect } from "react";
+import * as React from "react";
 import HomeScreen from "./pages/HomeScreen";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import ErrorPage from "./pages/error-page";
+import Console from "./pages/console";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomeScreen />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/console",
+    element: <Console />,
+    errorElement: <ErrorPage />,
+  },
+]);
 
 function App() {
- 
-
-  return (
-    <div >
-      <HomeScreen />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
