@@ -47,11 +47,11 @@ export default function ConsoleCard() {
   };
 
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 275, background: "#1B1C1D" }}>
       <CardHeader
         sx={{ mb: 0, pb: 0 }}
         title={
-          <Typography variant="h2" color="text.secondary">
+          <Typography variant="h2" color="#CCC">
             Welcome to Seekster Search Console
           </Typography>
         }
@@ -59,7 +59,7 @@ export default function ConsoleCard() {
       <CardHeader
         sx={{ mt: 0, pt: 0 }}
         title={
-          <Typography variant="h6" color="text.secondary" align="center">
+          <Typography variant="h6" color="#CCC" align="center">
             To Start Crawl, Submit Your Website Home Url.
           </Typography>
         }
@@ -107,6 +107,8 @@ export default function ConsoleCard() {
               variant="standard"
               value={website.seed}
               onChange={(event) => handleChange(event, "seed")}
+              InputLabelProps={{ style: { color: "#CCC" } }}
+              inputProps={{ style: { color: "#CCC" } }}
             />
           </Box>
         </div>

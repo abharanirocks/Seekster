@@ -11,7 +11,7 @@
 }
 
 .list {
-    color: #78909c;
+    color: #CCC;
     font-size: 13;
     margin-bottom: 16px;
     margin-top: 20px;
@@ -28,7 +28,7 @@ li {
 .inputBox {
     align-items: center;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, .12);
+    border: 1px solid rgba(204, 204, 204, 0.3);
     box-sizing: border-box;
     display: flex;
     justify-content: center;

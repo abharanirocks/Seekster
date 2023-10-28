@@ -22,8 +22,21 @@ body {
   /* transition: opacity 0.9s ease; */
 }
 
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .console-text {
   color: white;
+  text-decoration: none;
+  padding: 10px 20px 10px 0;
+
+}
+
+.console-text:hover {
+  text-decoration: none;
+  color: #FFFF00;
 }
 
 .logo-text{
