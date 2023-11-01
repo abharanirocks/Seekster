@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const MAX = 50;
 
@@ -15,7 +15,7 @@ function MyCanvas(props) {
     const ctx = canvas.getContext("2d");
     ctxRef.current = ctx;
     canvas.width = canvas.height = 400;
-      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+    ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
 
     // ctx.fillRect(0, 0, 400, 400);
 
@@ -32,7 +32,6 @@ function MyCanvas(props) {
     for (let a = 0; a < MAX; a++) {
       points.push([points[a][1], 0, points[a][0]]);
     }
-console.log(points)
     rus();
   }, []);
 
@@ -142,7 +141,8 @@ console.log(points)
           const b = p2[d * MAX + a];
           const c = p2[((a + 1) % MAX) + d * MAX];
           ctx.beginPath();
-          ctx.strokeStyle = "hsla(" + (((a / MAX) * 360) | 0) + ",70%,60%,0.15)";
+          ctx.strokeStyle =
+            "hsla(" + (((a / MAX) * 360) | 0) + ",70%,60%,0.15)";
           ctx.lineWidth = Math.pow(6, b[2]);
           ctx.lineTo(b[0] * s + 200, b[1] * s + 200);
           ctx.lineTo(c[0] * s + 200, c[1] * s + 200);

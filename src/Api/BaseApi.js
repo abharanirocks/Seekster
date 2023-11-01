@@ -1,6 +1,10 @@
 import axios from "axios";
-import { BASE_URL } from "./constant/ApiUrlConstant";
+import { CRAWL_BASE_URL, INDEXER_BASE_URL } from "./constant/ApiUrlConstant";
 
-export const myAxios = axios.create({
-  baseURL: BASE_URL,
+export const crawlAxios = axios.create({
+  baseURL: CRAWL_BASE_URL,
+});
+
+export const indexerAxios = axios.create({
+  baseURL: INDEXER_BASE_URL,
 });

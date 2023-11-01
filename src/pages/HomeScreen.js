@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import "../styles/HomeScreen.css";
 import Search from "../components/Search";
 import MyCanvas from "../components/MyCanvas";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-function HomeScreen() {
+const HomeScreen = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [searchInput, setSearchInput] = useState("");
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -37,7 +38,8 @@ function HomeScreen() {
       </div>
       <div className="search-container">
         <div style={{ margin: "10%", width: "50%", marginLeft: "26.7%" }}>
-          <Search placeholder={"Search..."} />
+          <Search placeholder={"Search..."} setValue={setSearchInput} value={searchInput}/>
+          <Link to={searchInput ? "/search" : "#"} state={searchInput} onClick={(e) => !searchInput && e.preventDefault()}>Search</Link>
         </div>
       </div>
     </div>

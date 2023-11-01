@@ -1,0 +1,22 @@
+.result-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+.center-button {
+    text-align: center;
+}
+  
+.center-button button {
+    width: inherit;
+    margin-bottom: 10px;
+}
+
+.search-content {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+  

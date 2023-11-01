@@ -3,6 +3,7 @@ import HomeScreen from "./pages/HomeScreen";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./pages/error-page";
 import Console from "./pages/console";
+import ResultScreen from "./pages/ResultScreen";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,11 @@ const router = createBrowserRouter([
   {
     path: "/console",
     element: <Console />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/search",
+    element: <ResultScreen />,
     errorElement: <ErrorPage />,
   },
 ]);
