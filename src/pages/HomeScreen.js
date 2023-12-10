@@ -38,12 +38,27 @@ const HomeScreen = () => {
       </div>
       <div className="search-container">
         <div style={{ margin: "10%", width: "50%", marginLeft: "26.7%" }}>
-          <Search placeholder={"Search..."} setValue={setSearchInput} value={searchInput}/>
-          <Link to={searchInput ? "/search" : "#"} state={searchInput} onClick={(e) => !searchInput && e.preventDefault()}>Search</Link>
+          <Search
+            placeholder={"Search..."}
+            setValue={setSearchInput}
+            value={searchInput}
+          />
+          <Link
+            style={{
+              textDecoration: "none",
+              justifyContent: "center",
+              display: "flex",
+            }}
+            to={searchInput ? "/search" : "#"}
+            state={searchInput}
+            onClick={(e) => !searchInput && e.preventDefault()}
+          >
+            Search
+          </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default HomeScreen;

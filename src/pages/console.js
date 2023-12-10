@@ -2,8 +2,7 @@ import React from "react";
 import "../styles/Console.css";
 import ConsoleCard from "../components/ConsoleCard";
 
-const console = () => {
-  
+const Console = () => {
   return (
     <div className="console">
       <ConsoleCard />
@@ -11,4 +10,4 @@ const console = () => {
   );
 };
 
-export default console;
+export default Console;

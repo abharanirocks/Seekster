@@ -31,15 +31,14 @@ body {
   color: white;
   text-decoration: none;
   padding: 10px 20px 10px 0;
-
 }
 
 .console-text:hover {
   text-decoration: none;
-  color: #FFFF00;
+  color: #ffff00;
 }
 
-.logo-text{
+.logo-text {
   color: white;
   font-size: 120px;
   font-weight: bold;
@@ -51,7 +50,7 @@ body {
   top: 35%;
 }
 
-.frontscreen{
+.frontscreen {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -69,7 +68,7 @@ body {
   background-color: blueviolet;
 }
 
-.search-container{
+.search-container {
   /* border: 1px solid #d8d3d3; */
   margin-top: -250px;
   z-index: 1001;
@@ -77,15 +76,17 @@ body {
   align-items: center;
   justify-content: center;
   background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2, 0, 36, 0.0005252100840336116) 0%, rgba(0, 0, 10, 1) 30%);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0.0005252100840336116) 0%,
+    rgba(0, 0, 10, 1) 30%
+  );
 }
-
 
 #canvasID {
   opacity: 0.5;
   /* border: 1px solid pink; */
-  transform: scale(2.3,2.3);
-
+  transform: scale(2.3, 2.3);
 }
 
 .second-screen {

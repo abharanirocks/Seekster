@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Table.css";
 import { DeleteOutline } from "@mui/icons-material";
+import ConsoleCard from "./ConsoleCard";
 
 function Table({ data }) {
   return (
@@ -16,7 +17,7 @@ function Table({ data }) {
           </tr>
         </thead>
         <tbody>
-          {data.map((row) => (
+          {/* {data.map((row) => (
             <tr>
               {row.map((cell) => (
                 <td>{cell}</td>
@@ -25,7 +26,7 @@ function Table({ data }) {
                 <DeleteOutline className="card-delete" />
               </td>
             </tr>
-          ))}
+          ))} */}
         </tbody>
       </table>
     </div>
